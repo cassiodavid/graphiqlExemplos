@@ -1,0 +1,735 @@
+D:\cmder_mini
+? cd D:\graphAPI
+
+D:\graphAPI
+? npm init -y
+Wrote to D:\graphAPI\package.json:
+
+{
+  "name": "graphAPI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test
+ 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+
+D:\graphAPI  (graphAPI@1.0.0)
+? code .
+
+D:\graphAPI  (graphAPI@1.0.0)
+? npm i express --save
+npm notice created a lockfile as p
+u should commit this file.
+npm WARN graphAPI@1.0.0 No descrip
+npm WARN graphAPI@1.0.0 No reposit
+
++ express@4.17.1
+added 50 packages from 37 contribu
+packages in 11.508s
+found 0 vulnerabilities
+
+
+D:\graphAPI  (graphAPI@1.0.0)
+? npm i
+npm WARN deprecated core-js@2.6.11
+onger maintained and not recommend
+the number of issues. Please, upgr
+s to the actual version of core-js
+npm WARN deprecated resolve-url@0.
+com/lydell/resolve-url#deprecated
+npm WARN deprecated urix@0.1.0: Pl
+hub.com/lydell/urix#deprecated
+
+> core-js@2.6.11 postinstall D:\gr
+core-js
+> node -e "try{require('./postinst
+
+Thank you for using core-js ( http
+ock/core-js ) for polyfilling Java
+ary!
+
+The project needs your help! Pleas
+g of core-js on Open Collective or
+> https://opencollective.com/core-
+> https://www.patreon.com/zloirock
+
+Also, the author of core-js ( http
+ock ) is looking for a good job -)
+
+npm WARN graphAPI@1.0.0 No descrip
+npm WARN graphAPI@1.0.0 No reposit
+
+added 191 packages from 159 contri
+ckages, updated 16 packages and au
+n 102.469s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 1 low severity vulnerability
+  run `npm audit fix` to fix them,
+details
+
+D:\graphAPI  (graphAPI@1.0.0)
+? sudo npm i -g knex
+'sudo' não é reconhecido como um c
+ou externo, um programa operável o
+s.
+
+D:\graphAPI  (graphAPI@1.0.0)
+? npm i -g knex
+npm WARN deprecated urix@0.1.0: Pl
+hub.com/lydell/urix#deprecated
+npm WARN deprecated resolve-url@0.
+com/lydell/resolve-url#deprecated
+C:\Users\cassin\AppData\Roaming\np
+assin\AppData\Roaming\npm\node_mod
+
++ knex@0.21.1
+added 159 packages from 132 contri
+
+D:\graphAPI  (graphAPI@1.0.0)
+? code .
+
+D:\graphAPI  (graphAPI@1.0.0)
+? knex init
+Created ./knexfile.js
+
+D:\graphAPI  (graphAPI@1.0.0)
+? knex migrate:make create_table_u
+Using environment: development
+Knex: run
+$ npm install sqlite3 --save
+Error: Cannot find module 'sqlite3
+Require stack:
+- D:\graphAPI\node_modules\knex\li
+ndex.js
+- D:\graphAPI\node_modules\knex\li
+- D:\graphAPI\node_modules\knex\kn
+- C:\Users\cassin\AppData\Roaming\
+x\bin\cli.js
+    at Function.Module._resolveFil
+les/cjs/loader.js:966:15)
+    at Function.Module._load (inte
+der.js:842:27)
+    at Module.require (internal/mo
+1026:19)
+    at require (internal/modules/c
+
+    at Client_SQLite3._driver (D:\
+s\knex\lib\dialects\sqlite3\index.
+    at Client_SQLite3.initializeDr
+de_modules\knex\lib\client.js:254:
+    at Client_SQLite3.Client (D:\g
+\knex\lib\client.js:115:10)
+    at new Client_SQLite3 (D:\grap
+ex\lib\dialects\sqlite3\index.js:6
+    at Knex (D:\graphAPI\node_modu
+s:60:34)
+    at initKnex (C:\Users\cassin\A
+ode_modules\knex\bin\cli.js:54:10)
+    at processTicksAndRejections (
+k_queues.js:97:5)
+    at async Command.<anonymous> (
+ata\Roaming\npm\node_modules\knex\
+
+D:\graphAPI  (graphAPI@1.0.0)
+?  npm install sqlite3 --save
+
+> sqlite3@4.2.0 install D:\graphAP
+> node-pre-gyp install --fallback-
+
+node-pre-gyp WARN Using needle for
+[sqlite3] Success: "D:\graphAPI\no
+ode_sqlite3.node" is installed via
+npm WARN graphAPI@1.0.0 No descrip
+npm WARN graphAPI@1.0.0 No reposit
+
++ sqlite3@4.2.0
+added 56 packages from 46 contribu
+
+3 packages are looking for funding
+  run `npm fund` for details
+
+found 2 low severity vulnerabiliti
+  run `npm audit fix` to fix them,
+
+D:\graphAPI  (graphAPI@1.0.0)
+? knex migrate:make create_table_u
+Using environment: development
+Knex:warning - sqlite does not sup
+fault` flag to hide this warning.
+Using environment: development
+Using environment: development
+Created Migration: D:\graphAPI\mig
+
+D:\graphAPI  (graphAPI@1.0.0)
+? knex migrate:latest
+(node:5008) [DEP0126] DeprecationW
+imeout.refresh() instead.
+(node:5008) [DEP0096] DeprecationW
+ clearTimeout instead.
+Batch 1 run: 1 migrations
+
+D:\graphAPI  (graphAPI@1.0.0)
+? cd D:\graphAPI\src
+
+D:\graphAPI\src
+? node config\database.js
+
+D:\graphAPI\src
+? node config\database.js
+(node:5744) [DEP0126] DeprecationW
+arning: timers.active() is depreca
+ted. Please use timeout.refresh()
+instead.
+(node:5744) [DEP0096] DeprecationW
+arning: timers.unenroll() is depre
+cated. Please use clearTimeout ins
+tead.
+[]
+^C
+D:\graphAPI\src
+? node config\database.js
+(node:5508) [DEP0126] DeprecationWarning
+ Please use timeout.refresh() instead.
+(node:5508) [DEP0096] DeprecationWarning
+d. Please use clearTimeout instead.
+[]
+^C
+D:\graphAPI\src
+? node config\database.js
+(node:5316) [DEP0126] DeprecationWarning
+ Please use timeout.refresh() instead.
+(node:5316) [DEP0096] DeprecationWarning
+d. Please use clearTimeout instead.
+[]
+^C
+D:\graphAPI\src
+? npm install mysql --save
+npm WARN graphAPI@1.0.0 No description
+npm WARN graphAPI@1.0.0 No repository fi
+
++ mysql@2.15.0
+updated 1 package and audited 294 packag
+
+3 packages are looking for funding
+  run `npm fund` for details
+
+found 2 low severity vulnerabilities
+  run `npm audit fix` to fix them, or `n
+
+D:\graphAPI\src
+? node config\database.js
+(node:5840) [DEP0126] DeprecationWarning
+ Please use timeout.refresh() instead.
+(node:5840) [DEP0096] DeprecationWarning
+d. Please use clearTimeout instead.
+[]
+^C
+D:\graphAPI\src
+? node config\database.js
+(node:5908) [DEP0126] DeprecationWarning
+ Please use timeout.refresh() instead.
+(node:5908) [DEP0096] DeprecationWarning
+d. Please use clearTimeout instead.
+[]
+Unhandled rejection Error: ER_BAD_FIELD_
+'field list'
+    at Query.Sequence._packetToError (D:
+\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (D:\graphAPI\no
+quences\Query.js:77:18)
+    at Protocol._parsePacket (D:\graphAP
+l\Protocol.js:279:23)
+    at Parser.write (D:\graphAPI\node_mo
+js:76:12)
+    at Protocol.write (D:\graphAPI\node_
+col.js:39:16)
+    at Socket.<anonymous> (D:\graphAPI\n
+.js:103:28)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295
+    at readableAddChunk (_stream_readabl
+    at Socket.Readable.push (_stream_rea
+    at TCP.onStreamRead (internal/stream
+    --------------------
+    at Protocol._enqueue (D:\graphAPI\no
+otocol.js:145:48)
+    at Connection.query (D:\graphAPI\nod
+s:208:25)
+    at D:\graphAPI\node_modules\knex\lib
+    at Promise._execute (D:\graphAPI\nod
+buggability.js:384:9)
+    at Promise._resolveFromExecutor (D:\
+s\release\promise.js:518:18)
+    at new Promise (D:\graphAPI\node_mod
+.js:103:10)
+    at Client_MySQL._query (D:\graphAPI\
+ysql\index.js:155:12)
+    at Client_MySQL.query (D:\graphAPI\n
+06:17)
+    at Runner.<anonymous> (D:\graphAPI\n
+55:36)
+    at Runner.tryCatcher (D:\graphAPI\no
+til.js:16:23)
+    at Runner.query (D:\graphAPI\node_mo
+.js:15:34)
+    at D:\graphAPI\node_modules\knex\lib
+    at tryCatcher (D:\graphAPI\node_modu
+16:23)
+    at D:\graphAPI\node_modules\bluebird
+    at tryCatcher (D:\graphAPI\node_modu
+16:23)
+    at Promise._settlePromiseFromHandler
+ird\js\release\promise.js:547:31)
+
+^C
+D:\graphAPI\src
+? node config\database.js
+(node:5880) [DEP0126] DeprecationWarning
+) instead.
+(node:5880) [DEP0096] DeprecationWarning
+nstead.
+[]
+[ 1 ]
+^C
+D:\graphAPI\src
+? node config\database.js
+(node:1664) [DEP0126] DeprecationWarning
+) instead.
+(node:1664) [DEP0096] DeprecationWarning
+nstead.
+[ 2 ]
+^C
+D:\graphAPI\src
+? node config\database.js
+(node:5688) [DEP0126] DeprecationWarning
+) instead.
+(node:5688) [DEP0096] DeprecationWarning
+nstead.
+[ 3 ]
+^C
+D:\graphAPI\src
+? npm install mysql@2.16.0 --save
+npm WARN graphAPI@1.0.0 No description
+npm WARN graphAPI@1.0.0 No repository fi
+
++ mysql@2.16.0
+added 1 package from 1 contributor, remo
+in 17.764s
+
+3 packages are looking for funding
+  run `npm fund` for details
+
+found 2 low severity vulnerabilities
+  run `npm audit fix` to fix them, or `n
+
+D:\graphAPI\src
+? npm audit fix
+npm WARN deprecated urix@0.1.0: Please s
+npm WARN deprecated resolve-url@0.2.1: h
+npm WARN graphAPI@1.0.0 No description
+npm WARN graphAPI@1.0.0 No repository fi
+
++ knex@0.21.1
+added 7 packages from 2 contributors, re
+
+2 packages are looking for funding
+  run `npm fund` for details
+
+fixed 2 of 2 vulnerabilities in 292 scan
+
+D:\graphAPI\src
+? node config\database.js
+[ 4 ]
+^C
+D:\graphAPI\src
+? node config\database.js
+[ 5 ]
+^C
+D:\graphAPI\src
+? node config\database.js
+[
+  RowDataPacket {
+    id: 1,
+    name: 'teste',
+    email: 'teste@teste.br',
+    password: 'test'
+  },
+  RowDataPacket {
+    id: 2,
+    name: 'Suzaooo',
+    email: 'teste@teste.br',
+    password: 'teasdaasdasdsst'
+  },
+  RowDataPacket {
+    id: 3,
+    name: 'SuzaooCuzaoooo',
+    email: 'teste@teste.br',
+    password: 'teasdaasdasdsst'
+  },
+  RowDataPacket {
+    id: 4,
+    name: 'SuzaooCuzaoooo',
+    email: 'teste@teste.br',
+    password: 'teasdaasdasdsst'
+  },
+  RowDataPacket {
+    id: 5,
+    name: 'Suasduasdadasdzaoooo',
+    email: 'teste@teste.br',
+    password: 'teaasdasdsdaasdasdsst'
+  }
+]
+^C
+D:\graphAPI\src
+? node config\database.js
+[
+  RowDataPacket { id: 1 },
+  RowDataPacket { id: 2 },
+  RowDataPacket { id: 3 },
+  RowDataPacket { id: 4 },
+  RowDataPacket { id: 5 }
+]
+^C
+D:\graphAPI\src
+? node config\database.js
+RowDataPacket {
+  id: 1,
+  name: 'teste',
+  email: 'teste@teste.br',
+  password: 'test'
+}
+^C
+D:\graphAPI\src
+? node config\database.js
+[
+  RowDataPacket { id: 1 },
+  RowDataPacket { id: 2 },
+  RowDataPacket { id: 3 },
+  RowDataPacket { id: 4 },
+  RowDataPacket { id: 5 }
+]
+^C
+D:\graphAPI\src
+? node config\database.js
+RowDataPacket {
+  id: 1,
+  name: 'teste',
+  email: 'teste@teste.br',
+  password: 'test'
+}
+^C
+D:\graphAPI\src
+? node config\database.js
+RowDataPacket {
+  id: 3,
+  name: 'SuzaooCuzaoooo',
+  email: 'teste@teste.br',
+  password: 'teasdaasdasdsst'
+}
+^C
+D:\graphAPI\src
+? node /server.js
+internal/modules/cjs/loader.js:969
+  throw err;
+  ^
+
+Error: Cannot find module 'D:\server.js'
+    at Function.Module._resolveFilename
+    at Function.Module._load (internal/m
+    at Function.executeUserEntryPoint [a
+    at internal/main/run_main_module.js:
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+D:\graphAPI\src
+? cd api
+
+D:\graphAPI\src\api
+? node server.js
+internal/modules/cjs/loader.js:969
+  throw err;
+  ^
+
+Error: Cannot find module './api/schema'
+Require stack:
+- D:\graphAPI\src\api\server.js
+    at Function.Module._resolveFilename
+    at Function.Module._load (internal/m
+    at Module.require (internal/modules/
+    at require (internal/modules/cjs/hel
+    at Object.<anonymous> (D:\graphAPI\s
+    at Module._compile (internal/modules
+    at Object.Module._extensions..js (in
+    at Module.load (internal/modules/cjs
+    at Function.Module._load (internal/m
+    at Function.executeUserEntryPoint [a
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'D:\\graphAPI\\src\\ap
+}
+
+D:\graphAPI\src\api
+? node server.js
+internal/modules/cjs/loader.js:969
+  throw err;
+  ^
+
+Error: Cannot find module './api/schema'
+Require stack:
+- D:\graphAPI\src\api\server.js
+    at Function.Module._resolveFilename
+    at Function.Module._load (internal/m
+    at Module.require (internal/modules/
+    at require (internal/modules/cjs/hel
+    at Object.<anonymous> (D:\graphAPI\s
+    at Module._compile (internal/modules
+    at Object.Module._extensions..js (in
+    at Module.load (internal/modules/cjs
+    at Function.Module._load (internal/m
+    at Function.executeUserEntryPoint [a
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'D:\\graphAPI\\src\\ap
+}
+
+D:\graphAPI\src\api
+? node server.js
+internal/modules/cjs/loader.js:969
+  throw err;
+  ^
+
+Error: Cannot find module './api/schema'
+Require stack:
+- D:\graphAPI\src\api\server.js
+    at Function.Module._resolveFilename
+    at Function.Module._load (internal/m
+    at Module.require (internal/modules/
+    at require (internal/modules/cjs/hel
+    at Object.<anonymous> (D:\graphAPI\s
+    at Module._compile (internal/modules
+    at Object.Module._extensions..js (in
+    at Module.load (internal/modules/cjs
+    at Function.Module._load (internal/m
+    at Function.executeUserEntryPoint [a
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'D:\\graphAPI\\src\\ap
+}
+
+D:\graphAPI\src\api
+? node server.js
+(node:4100) Warning: To load an ES modul
+extension.
+D:\graphAPI\src\api\server.js:1
+import express from 'express'
+^^^^^^
+
+SyntaxError: Cannot use import statement
+    at wrapSafe (internal/modules/cjs/lo
+    at Module._compile (internal/modules
+    at Object.Module._extensions..js (in
+    at Module.load (internal/modules/cjs
+    at Function.Module._load (internal/m
+    at Function.executeUserEntryPoint [a
+    at internal/main/run_main_module.js:
+
+D:\graphAPI\src\api
+? node server.js
+D:\graphAPI\node_modules\graphql\utiliti
+    throw new Error('Type "' + typeRef.n
+    ^
+
+Error: Type "user" not found in document
+    at ASTDefinitionBuilder._resolveType
+js:134:11)
+    at ASTDefinitionBuilder.buildType (D
+218:79)
+    at ASTDefinitionBuilder._buildWrappe
+hema.js:227:24)
+    at ASTDefinitionBuilder.buildField (
+:248:18)
+    at D:\graphAPI\node_modules\graphql\
+    at D:\graphAPI\node_modules\graphql\
+    at Array.reduce (<anonymous>)
+    at keyValMap (D:\graphAPI\node_modul
+    at ASTDefinitionBuilder._makeFieldDe
+ema.js:299:49)
+    at fields (D:\graphAPI\node_modules\
+
+D:\graphAPI\src\api
+? node server.js
+internal/modules/cjs/loader.js:969
+  throw err;
+  ^
+
+Error: Cannot find module './api/schema'
+Require stack:
+- D:\graphAPI\src\api\server.js
+    at Function.Module._resolveFilename
+    at Function.Module._load (internal/m
+    at Module.require (internal/modules/
+    at require (internal/modules/cjs/hel
+    at Object.<anonymous> (D:\graphAPI\s
+    at Module._compile (internal/modules
+    at Object.Module._extensions..js (in
+    at Module.load (internal/modules/cjs
+    at Function.Module._load (internal/m
+    at Function.executeUserEntryPoint [a
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'D:\\graphAPI\\src\\ap
+}
+
+D:\graphAPI\src\api
+? node server.js
+internal/modules/cjs/loader.js:969
+  throw err;
+  ^
+
+Error: Cannot find module './api/schema.
+Require stack:
+- D:\graphAPI\src\api\server.js
+    at Function.Module._resolveFilename
+    at Function.Module._load (internal/m
+    at Module.require (internal/modules/
+    at require (internal/modules/cjs/hel
+    at Object.<anonymous> (D:\graphAPI\s
+    at Module._compile (internal/modules
+    at Object.Module._extensions..js (in
+    at Module.load (internal/modules/cjs
+    at Function.Module._load (internal/m
+    at Function.executeUserEntryPoint [a
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'D:\\graphAPI\\src\\ap
+}
+
+D:\graphAPI\src\api
+? node server.js
+internal/modules/cjs/loader.js:969
+  throw err;
+  ^
+
+Error: Cannot find module './api/schema'
+Require stack:
+- D:\graphAPI\src\api\server.js
+    at Function.Module._resolveFilename
+    at Function.Module._load (internal/m
+    at Module.require (internal/modules/
+    at require (internal/modules/cjs/hel
+    at Object.<anonymous> (D:\graphAPI\s
+    at Module._compile (internal/modules
+    at Object.Module._extensions..js (in
+    at Module.load (internal/modules/cjs
+    at Function.Module._load (internal/m
+    at Function.executeUserEntryPoint [a
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'D:\\graphAPI\\src\\ap
+}
+
+D:\graphAPI\src\api
+? node server.js
+internal/modules/cjs/loader.js:969
+  throw err;
+  ^
+
+Error: Cannot find module './api/schema'
+Require stack:
+- D:\graphAPI\src\api\server.js
+    at Function.Module._resolveFilename
+    at Function.Module._load (internal/m
+    at Module.require (internal/modules/
+    at require (internal/modules/cjs/hel
+    at Object.<anonymous> (D:\graphAPI\s
+    at Module._compile (internal/modules
+    at Object.Module._extensions..js (in
+    at Module.load (internal/modules/cjs
+    at Function.Module._load (internal/m
+    at Function.executeUserEntryPoint [a
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'D:\\graphAPI\\src\\ap
+}
+
+D:\graphAPI\src\api
+? node server.js
+internal/modules/cjs/loader.js:969
+  throw err;
+  ^
+
+Error: Cannot find module './api/schema'
+Require stack:
+- D:\graphAPI\src\api\server.js
+    at Function.Module._resolveFilename
+    at Function.Module._load (internal/m
+    at Module.require (internal/modules/
+    at require (internal/modules/cjs/hel
+    at Object.<anonymous> (D:\graphAPI\s
+    at Module._compile (internal/modules
+    at Object.Module._extensions..js (in
+    at Module.load (internal/modules/cjs
+    at Function.Module._load (internal/m
+    at Function.executeUserEntryPoint [a
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'D:\\graphAPI\\src\\ap
+}
+
+D:\graphAPI\src\api
+? node server.js
+internal/modules/cjs/loader.js:969
+  throw err;
+  ^
+
+Error: Cannot find module './api/schema'
+Require stack:
+- D:\graphAPI\src\api\server.js
+    at Function.Module._resolveFilename
+    at Function.Module._load (internal/m
+    at Module.require (internal/modules/
+    at require (internal/modules/cjs/hel
+    at Object.<anonymous> (D:\graphAPI\s
+    at Module._compile (internal/modules
+    at Object.Module._extensions..js (in
+    at Module.load (internal/modules/cjs
+    at Function.Module._load (internal/m
+    at Function.executeUserEntryPoint [a
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'D:\\graphAPI\\src\\ap
+}
+
+D:\graphAPI\src\api
+? cd D:\graphAPI
+
+D:\graphAPI  (graphAPI@1.0.0)
+? cd D:\graphAPI\src
+
+D:\graphAPI\src
+? node server.js
+D:\graphAPI\src\server.js:6
+const app = espress()
+            ^
+
+ReferenceError: espress is not defined
+    at Object.<anonymous> (D:\graphAPI\s
+    at Module._compile (internal/modules
+    at Object.Module._extensions..js (in
+    at Module.load (internal/modules/cjs
+    at Function.Module._load (internal/m
+    at Function.executeUserEntryPoint [a
+    at internal/main/run_main_module.js:
+
+D:\graphAPI\src
+? node server.js
+Executando...
+^C
+D:\graphAPI\src
+? cd D:\GraphapiPost
+
+D:\GraphapiPost
+?
